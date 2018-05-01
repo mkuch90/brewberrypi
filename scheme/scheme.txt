@@ -1,0 +1,70 @@
+
+
+mash:
+condition "HLT Too Low":
+hlt < target
+action :
+hlt power = max
+
+condition "Herms Too Low":
+herms < target
+hlt > target
+action:
+hlt power = max
+
+condition "Mash Too Low":
+mash < target
+herms == target
+// hlt > target
+action:
+hlt power = low
+
+condition  "Equalizing":
+mash < target
+herms > target
+//hlt > target
+action:
+hlt power = 0
+
+condition "At Target":
+mash == target
+herms == target
+action:
+hlt power = 0
+
+Boil:
+Condition "Rapid Rise"
+Boil < 97
+action:
+boil power = 100
+
+Condition "Main boil"
+Boil >=97
+action:
+boil power = 50
+
+HLT Target:
+Condition "rapid Rise"
+HLT < target
+Action:
+hlt power = 100
+
+condition "at target":
+hlt >= Target
+action:
+hlt power = 0
+
+Distill:
+Condition "rise"
+still column < XX
+still boiler < YY
+action:
+still power = PowerMed
+cooling valve = closed
+
+Condition "run"
+still column > XX
+still boilder > YY
+action:
+still power = PowerLow
+cooling valve = open

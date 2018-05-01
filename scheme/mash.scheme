@@ -1,0 +1,29 @@
+"HLT Too Low": HLT<{target}
+hlt < target
+action :
+hlt power = max
+
+condition "Herms Too Low":
+herms < target
+action:
+hlt power = max
+
+condition "Mash Too Low":
+mash < target
+herms == target
+// hlt > target
+action:
+hlt power = low
+
+condition  "Equalizing":
+mash < target
+herms > target
+//hlt > target
+action:
+hlt power = 0
+
+condition "At Target":
+mash == target
+herms == target
+action:
+hlt power = 0
