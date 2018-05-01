@@ -3,7 +3,7 @@ package brewery
 import (
 	"errors"
 
-	temp "github.com/brewduino/temperature"
+	temp "github.com/brewberrypi/temperature"
 )
 
 var ErrInvalidCurrentVals = errors.New("could not retrive")

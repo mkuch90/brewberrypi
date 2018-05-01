@@ -3,10 +3,10 @@ package brewery
 import (
 	"testing"
 
-	"github.com/brewduino/heater"
-	"github.com/brewduino/logger"
-	"github.com/brewduino/ssr"
-	temp "github.com/brewduino/temperature"
+	"github.com/brewberrypi/heater"
+	"github.com/brewberrypi/logger"
+	"github.com/brewberrypi/ssr"
+	temp "github.com/brewberrypi/temperature"
 )
 
 func GetBrewConfig() BreweryConfig {

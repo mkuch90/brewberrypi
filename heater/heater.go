@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/brewduino/ssr"
+	"github.com/brewberrypi/ssr"
 )
 
 var ErrInvalidPowerLevel = errors.New("invalid power level")

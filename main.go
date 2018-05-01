@@ -3,7 +3,7 @@ package brewduino
 import (
 	"fmt"
 
-	"github.com/brewduino/temperature"
+	"github.com/brewberrypi/temperature"
 )
 
 func main() {

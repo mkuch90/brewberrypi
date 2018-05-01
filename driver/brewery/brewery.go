@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/brewduino/heater"
-	"github.com/brewduino/logger"
-	temp "github.com/brewduino/temperature"
+	"github.com/brewberrypi/heater"
+	"github.com/brewberrypi/logger"
+	temp "github.com/brewberrypi/temperature"
 )
 
 var ErrSensorNotFound = errors.New("sensor not found")
